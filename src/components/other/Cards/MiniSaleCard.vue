@@ -12,10 +12,12 @@
         </div>
         <div class="ml-2">
           <div class="header-2">
-            <strong>
+            <strong class="mr-2">
               {{ minicardnumber }}
             </strong>
-            {{ minicardtitle }}
+            <span class=""">
+              {{ minicardtitle }}
+            </span>
           </div>
           <div class="subtext">
             {{ minicardsubhead }}

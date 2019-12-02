@@ -19,20 +19,21 @@
           <div>
             <b-table
               small
+              borderless
               :fields="fields"
               :items="items"
               responsive="sm"
-              class="committable"
+              class="committable mb-0 border-bottom-0"
             >
-              <template v-slot:head(something)="data">
-                {{ data }}
-              </template>
               <template v-slot:cell(avatar)="data">
-                <img class="avatar m-2" :src="avatar" alt="" />
+                <img class="avatar m-2" :src="data.value" alt="" />
               </template>
               <template v-slot:cell(action)="data">
-                <font-awesome icon="trash" class="trashicon"></font-awesome>
+                <div class="p-2">
+                  <font-awesome icon="trash" class="trashicon"></font-awesome>
+                </div>
               </template>
+            </b-table>
             </b-table>
           </div>
         </div>
@@ -54,13 +55,13 @@ export default {
       },
       graphdata: lineChart_data2,
       graphoptions: line_options,
-      height: "100px",
+      height: 100,
       fields: [
-        { key: "Avatar", label: "" },
-        { key: "user", label: "user" },
-        { key: "commit", label: "Commit" },
-        { key: "date", label: "Date" },
-        { key: "Action", label: "Action" }
+        { key: "avatar", label: "",class:"align-middle  border-bottom  "},
+        { key: "user", label: "user",class:"align-middle  border-bottom  " },
+        { key: "commit", label: "Commit",class:"align-middle  border-bottom  "  },
+        { key: "date", label: "Date",class:"align-middle  border-bottom  "  },
+        { key: "Action", label: "",class:"align-middle   text-center border-bottom  "  }
       ],
       items: [
         {
@@ -136,4 +137,5 @@ export default {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 </style>

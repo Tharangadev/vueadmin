@@ -2,8 +2,8 @@
   <div>
     <b-card no-body class="p-0 addbottommargin">
       <div class="d-flex align-items-center p-3 justify-content-between">
-        <h3 class="mb-0">243</h3>
-        <p class="mb-0 header-2">New users</p>
+        <span class="mb-0">{{number}}</span>
+        <span>{{title}}</span>
       </div>
 <!--      //:TODO =>height should be number-->
       <LineChart :color="colors" :data="graphdata" :options="graphoptions"/>
@@ -20,11 +20,13 @@ export default {
     return {
       graphdata: this.lineChart_data,
       graphoptions: this.line_options,
-      linechart:100
+      linechart:100,
+      title:this.title,
+      number:this.number
     };
   },
   methods:{
   },
-  props: ["colors", "lineChart_data", "line_options"],
+  props: ["colors", "lineChart_data", "line_options","number","title"],
 };
 </script>

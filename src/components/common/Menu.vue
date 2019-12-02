@@ -13,21 +13,6 @@
             <font-awesome icon="cube"></font-awesome>
             <span class="menuItem pl-2">Interface</span>
           </b-nav-item>
-          <b-nav-item-dropdown no-caret class="left-menu">
-            <template v-slot:button-content>
-              <font-awesome icon="calendar"></font-awesome>
-              <span class="menuItem pl-2">Components</span>
-            </template>
-            <b-dropdown-item>
-              <router-link to="/store">Store</router-link>
-            </b-dropdown-item>
-            <b-dropdown-item>
-              <router-link to="Blog">Blog</router-link>
-            </b-dropdown-item>
-            <b-dropdown-item>
-              <router-link to="/chat">Chat</router-link>
-            </b-dropdown-item>
-          </b-nav-item-dropdown>
           <b-nav-item-dropdown no-caret class="navbar-drop left-menu">
             <template v-slot:button-content>
               <font-awesome icon="file"></font-awesome>
@@ -50,6 +35,15 @@
             </b-dropdown-item>
             <b-dropdown-item>
               <router-link to="/email">Email view</router-link>
+            </b-dropdown-item>
+            <b-dropdown-item>
+              <router-link to="/store">Store</router-link>
+            </b-dropdown-item>
+            <b-dropdown-item>
+              <router-link to="Blog">Blog</router-link>
+            </b-dropdown-item>
+            <b-dropdown-item>
+              <router-link to="/chat">Chat</router-link>
             </b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item href="#">

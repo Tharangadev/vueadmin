@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-card style="max-width: 20rem;" class="addbottommargin body ">
+        <b-card class="addbottommargin body ">
             <b-card-body class="p-0 text-center">
                 <div class="text-right text-green ">
                     {{percentage}} <sup>{{variation}}</sup>

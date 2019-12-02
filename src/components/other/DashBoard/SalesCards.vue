@@ -1,6 +1,6 @@
 <template>
   <b-row>
-    <b-col v-for="(i, key) in MiniSalesData" :key="key">
+    <b-col sm="12" md="12" lg="3" v-for="(i, key) in MiniSalesData" :key="key">
       <MiniSalesCard
         :minicardnumber="i.minicardnumber"
         :minicardtitle="i.minicardtitle"

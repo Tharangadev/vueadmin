@@ -6,13 +6,13 @@
     <GraphCard></GraphCard>
     <Invoice></Invoice>
     <b-row>
-      <b-col cols="4">
+      <b-col lg="4" md="6" xs="12" sm="12">
         <ProfileCard></ProfileCard>
-      </b-col>
-      <b-col cols="4">
+      </b-col >
+      <b-col lg="4" md="6" xs="12" sm="12">
         <GraphcardPie chartTitle="This month sales"></GraphcardPie>
       </b-col>
-      <b-col cols="4">
+      <b-col  lg="4" md="6" xs="12" sm="12">
         <GraphcardBar chartTitle="this is a bar chart"></GraphcardBar>
       </b-col>
     </b-row>

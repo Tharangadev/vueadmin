@@ -1,13 +1,13 @@
 <template>
-  <b-card no-body>
-    <b-card-header class="card-header">
+  <b-card no-body class="addbottommargin">
+    <b-card-header class="card-header border-0">
       <h6 class="mb-0">
         Users
       </h6>
     </b-card-header>
     <b-card-body class="p-0">
       <b-list-group>
-        <b-list-item v-for="user in users">
+        <b-list-group-item v-for="user in users" class="p-0 border-left-0 border-right-0 rounded-0  border-bottom">
           <div class="d-flex p-3 align-items-center justify-content-between">
             <div class="d-flex">
               <div class="">
@@ -34,7 +34,7 @@
               </b-dropdown>
             </div>
           </div>
-        </b-list-item>
+        </b-list-group-item>
       </b-list-group>
     </b-card-body>
   </b-card>
