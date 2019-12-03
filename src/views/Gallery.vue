@@ -14,10 +14,10 @@
           <b-card-footer class="bg-white border-0 d-flex justify-content-between pt-0">
             <div class="avatar_block d-flex">
               <div class="avatar-md">
-                <img class="rounded-circle circleShadow w-100 h-100" src="../assets/kitty.jpg" alt />
+                <img class="rounded-circle circleShadow w-100 h-100" src="../assets/avatar.svg" alt />
               </div>
               <div class="avatar_name pl-2">
-                <div class>Kitty mousehunter</div>
+                <div class>Sam Bailey</div>
                 <div class="icongrey">12 Days ago</div>
               </div>
             </div>

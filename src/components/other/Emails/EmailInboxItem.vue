@@ -3,7 +3,7 @@
     <font-awesome icon="bookmark" class="bookmark"></font-awesome>
     <div class="avatar_block d-flex">
       <div class="avatar-md mr-3">
-        <img class="rounded-circle circleShadow w-100 h-100" src="@/assets/kitty.jpg" alt />
+        <img class="rounded-circle circleShadow w-100 h-100" src="@/assets/avatar.svg" alt />
       </div>
     </div>
     <div class="w-100" :class="{afterslide_margin:menuon}">

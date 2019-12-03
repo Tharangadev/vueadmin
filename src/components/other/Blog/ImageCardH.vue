@@ -14,7 +14,7 @@
         <div class="card-avatar d-flex align-items-center mt-auto">
           <div class="image">
             <img
-              src="../../../assets/kitty.jpg"
+              src="@/assets/avatar.svg"
               height="50"
               alt=""
               class="rounded-circle"

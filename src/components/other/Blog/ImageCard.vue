@@ -6,7 +6,7 @@
         <p>{{item.discription}}</p>
         <div class="card-avatar d-flex align-items-center mt-auto">
             <div class="image">
-                <img src="../../../assets/kitty.jpg" height="50" alt class="rounded-circle" />
+                <img src="@/assets/avatar.svg" height="50" alt class="rounded-circle" />
             </div>
             <div class="ml-2">
                 <div>{{item.author}}</div>

@@ -1,6 +1,6 @@
 <template>
   <b-row>
-    <b-col class="mx-auto logincard" cols="4">
+    <b-col class="mx-auto logincard" xs="12" md="8" sm="12" lg="4">
       <b-card no-body class="mt-3 p-3">
         <b-card-body>
           <h4 class="mb-3">Forgot password</h4>

@@ -6,11 +6,11 @@
 </b-col>
  </b-row>
     <b-row>
-      <b-col cols="4">
+      <b-col sm="12" lg="4" md="4" xs="12">
         <ProfileCard />
         <ProfileCardSmall />
       </b-col>
-      <b-col cols="8">
+      <b-col sm="12" lg="8" md="8" xs="12">
         <CommentBox />
       </b-col>
     </b-row>

@@ -5,7 +5,8 @@
         <img
           alt=""
           class="avatarBig rounded-circle circleShadow"
-          src="@/assets/kitty.jpg"
+          src="@/assets/avatar.svg"
+          height="75"
         />
         <div class="pl-3">
           <h3 class="header">
@@ -15,8 +16,8 @@
             {{user.motto}}
           </p>
 
-          <b-button-group class="socialbuttons">
-            <b-button variant="link" :href="user.twitter">
+          <b-button-group class="socialbuttons mt-0">
+            <b-button variant="link" class="pl-0" :href="user.twitter">
               <div>
                 <font-awesome :icon="{ prefix: 'fab', iconName: 'twitter' }" />
               </div>
@@ -52,7 +53,7 @@ computed:{
     user:state=>state.Profile
   })
 
-  } 
+  }
 }
 </script>
 

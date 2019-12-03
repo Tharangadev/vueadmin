@@ -189,6 +189,15 @@ body {
   }
 }
 
+@media screen and (max-width:500px) {
+  .dropdown-menu {
+    border: none;
+    box-shadow: none;
+  }
+  .left-menu .dropdown-menu .dropdown-item:before{
+    display:none;
+  }
+}
 </style>
 <script>
 import Menu from "./components/common/Menu";

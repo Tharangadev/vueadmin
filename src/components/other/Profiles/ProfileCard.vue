@@ -7,8 +7,9 @@
       <div class="text-center image pb-2">
         <img
           class="rounded-circle circleShadow"
-          src="@/assets/kitty.jpg"
+          src="@/assets/avatar.svg"
           alt=""
+          height="100"
         />
       </div>
       <h3 class="text-center text-capitalize pb-2">

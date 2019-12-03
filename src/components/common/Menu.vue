@@ -1,7 +1,8 @@
 <template>
   <div class="menubar">
-    <b-navbar class="white-bg border-top border-bottom pl-2">
-      <b-container>
+    <b-navbar toggleable="md" class="white-bg border-top border-bottom pl-2">
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item>
             <router-link to="/">
@@ -28,7 +29,7 @@
               <router-link to="/register">Register</router-link>
             </b-dropdown-item>
             <b-dropdown-item>
-              <router-link to="/forgot password">Forgot password</router-link>
+              <router-link to="/forgot-password">Forgot password</router-link>
             </b-dropdown-item>
             <b-dropdown-item>
               <router-link to="/gallery">Gallery</router-link>
@@ -57,13 +58,13 @@
             </router-link>
           </b-nav-item>
         </b-navbar-nav>
-      </b-container>
+      </b-collapse>
     </b-navbar>
   </div>
 </template>
 <script>
 export default {
-  name: "Menu"
+  name: 'Menu',
 };
 </script>
 <style lang="scss" scoped>
