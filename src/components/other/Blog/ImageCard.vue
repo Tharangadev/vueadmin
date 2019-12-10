@@ -1,17 +1,12 @@
 <template>
   <b-card no-body class="addbottommargin">
-    <img src='' alt />
+    <img :src="thumbUrl()" alt />
     <b-card-body class="d-flex flex-column">
       <h4>{{ item.title }}</h4>
       <p>{{ item.body }}</p>
       <div class="card-avatar d-flex align-items-center mt-auto">
         <div class="image">
-          <img
-            src="@/assets/avatar.svg"
-            height="50"
-            alt
-            class="rounded-circle"
-          />
+          <img src="@/assets/avatar.svg" height="50" alt class="rounded-circle" />
         </div>
         <div class="ml-2">
           <div>{{ item.author }}</div>
@@ -27,32 +22,34 @@
   </b-card>
 </template>
 <script>
-import moment from 'moment';
+import moment from "moment";
 export default {
-  name: 'ImageCard',
+  name: "ImageCard",
   data() {
     return {
-      liked: false,
+      liked: false
     };
   },
-  props: ['item'],
+  props: ["item"],
   computed: {},
   methods: {
     postlike() {
       this.liked = !this.liked;
     },
     articleDate(artDate) {
-      let borodinoBattle = moment(artDate, 'DD/MM/YYYY HH:mm:ss');
+      let borodinoBattle = moment(artDate, "DD/MM/YYYY HH:mm:ss");
       let now = moment();
-      let days = now.diff(borodinoBattle, 'days');
+      let days = now.diff(borodinoBattle, "days");
       return days;
     },
-    avatarUrl(){
-
-      // let url=`https://picsum.photos/id/${Math.}/300/200`
-// return 
+    thumbUrl() {
+      let max = 999;
+      let min = 300;
+      let random = Math.floor(Math.random() * (max - min)) + min;
+      let url = `https://picsum.photos/id/${random}/300/200`;
+      return url;
     }
-  },
+  }
 };
 </script>
 
