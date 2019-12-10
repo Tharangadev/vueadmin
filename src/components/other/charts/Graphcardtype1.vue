@@ -2,10 +2,9 @@
   <div>
     <b-card no-body class="p-0 addbottommargin">
       <div class="d-flex align-items-center p-3 justify-content-between">
-        <span class="mb-0">{{number}}</span>
+        <span class="mb-0">{{numbers}}</span>
         <span>{{title}}</span>
       </div>
-<!--      //:TODO =>height should be number-->
       <LineChart :color="colors" :data="graphdata" :options="graphoptions"/>
     </b-card>
   </div>
@@ -21,8 +20,7 @@ export default {
       graphdata: this.lineChart_data,
       graphoptions: this.line_options,
       linechart:100,
-      title:this.title,
-      number:this.number
+      numbers:this.number
     };
   },
   methods:{

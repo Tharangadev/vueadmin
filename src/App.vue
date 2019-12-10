@@ -1,21 +1,20 @@
 <template>
-	<div>
-		<Header></Header>
-		<Menu></Menu>
+  <div>
+    <Header></Header>
+    <Menu></Menu>
     <b-container class="mt-4">
       <router-view></router-view>
     </b-container>
     <Footer></Footer>
-	</div>
+  </div>
 </template>
 <style lang="scss">
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/bootstrap-vue/src/index.scss";
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap");
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-vue/src/index.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap');
 
 * {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: rgb(73, 80, 87);
   font-size: 0.9375rem;
   font-weight: 400;
@@ -108,7 +107,7 @@ body {
 
 .cardshadow,
 .common-shadow {
-  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 ///colors
@@ -166,7 +165,7 @@ body {
         transform: rotate(45deg);
         border-top: 1px solid #ced4da;
         border-left: 1px solid #ced4dad9;
-        content: "";
+        content: '';
       }
     }
   }
@@ -184,31 +183,31 @@ body {
       transform: rotate(45deg);
       border-top: 1px solid #ced4da;
       border-left: 1px solid #ced4dad9;
-      content: "";
+      content: '';
     }
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .dropdown-menu {
     border: none;
     box-shadow: none;
   }
-  .left-menu .dropdown-menu .dropdown-item:before{
-    display:none;
+  .left-menu .dropdown-menu .dropdown-item:before {
+    display: none;
   }
 }
 </style>
 <script>
-import Menu from "./components/common/Menu";
-import Header from "./components/common/Header";
-import Footer from "./components/common/Footer";
+import Menu from './components/common/Menu';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Header,
     Footer,
-    Menu
-  }
+    Menu,
+  },
 };
 </script>

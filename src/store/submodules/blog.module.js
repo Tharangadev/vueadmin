@@ -1,72 +1,32 @@
+import {} from '@/common/api.services';
+import axios from 'axios';
+import {API_URL} from '@/common/config';
+import {GRAB_ARTICLES} from '../action.type';
+import {FETCH_ARTICLES} from '../mutations.type';
+import NProgress from 'nprogress'
 const state = {
-articles:[ 
-    {
-        title:"some title",
-        discription:"ou can have them in multicolors ,Black ,white or chocolet brawn.They are smarter ,not much like collies, poodle or german shepards.Tehy are go",
-        author:"Kitty mousehunter",
-        avatar:"../../../avatar.svg",
-        thumb:"https://picsum.photos/id/237/300/200",
-        time:"04/09/2018 15:00:00"
-    },
-
-    {
-        title:"some title",
-        discription:"ou can have them in multicolors ,Black ,white or chocolet brawn.They are smarter ,not much like collies, poodle or german shepards.Tehy are go",
-        author:"Kitty mousehunter",
-        avatar:"../../../avatar.svg",
-        thumb:"https://picsum.photos/id/237/300/200",
-        time:"31/10/2019 11:00:00"
-    },
-    {
-        title:"some title",
-        discription:"ou can have them in multicolors ,Black ,white or chocolet brawn.They are smarter ,not much like collies, poodle or german shepards.Tehy are go",
-        author:"Kitty mousehunter",
-        avatar:"../../../avatar.svg",
-        thumb:"https://picsum.photos/id/237/300/200",
-        time:"12/04/2019 21:00:00"
-    },
-    {
-        title:"some title",
-        discription:"ou can have them in multicolors ,Black ,white or chocolet brawn.They are smarter ,not much like collies, poodle or german shepards.Tehy are go",
-        author:"Kitty mousehunter",
-        avatar:"../../../avatar.svg",
-        thumb:"https://picsum.photos/id/237/300/200",
-        time:"10/10/2019 01:32:00"
-    },
-    {
-        title:"some title",
-        discription:"ou can have them in multicolors ,Black ,white or chocolet brawn.They are smarter ,not much like collies, poodle or german shepards.Tehy are go",
-        author:"Kitty mousehunter",
-        avatar:"../../../avatar.svg",
-        thumb:"https://picsum.photos/id/237/300/200",
-        time:"03/01/2019 03:00:00"
-    },
-    {
-        title:"some title",
-        discription:"ou can have them in multicolors ,Black ,white or chocolet brawn.They are smarter ,not much like collies, poodle or german shepards.Tehy are go",
-        author:"Kitty mousehunter",
-        avatar:"../../../avatar.svg",
-        thumb:"https://picsum.photos/id/237/300/200",
-        time:"02/03/2012 08:00:32"
-    },
- ],
-
-
-}
-
+  articles: [],
+};
 const actions = {
-
-}
+  async [GRAB_ARTICLES](context) {
+    NProgress.start()
+    await axios.get(`${API_URL}posts`).then(data => {
+    NProgress.done()
+      context.commit(FETCH_ARTICLES, data.data);
+      return data;
+    });
+  },
+};
 const mutations = {
-
-}
-const getters = {
-
-}
+  [FETCH_ARTICLES](state, articles) {
+    state.articles = articles;
+  },
+};
+const getters = {};
 
 export default {
-    state,
-    actions,
-    mutations,
-    getters
-}
+  state,
+  actions,
+  mutations,
+  getters,
+};

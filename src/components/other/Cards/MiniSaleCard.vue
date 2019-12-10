@@ -15,7 +15,7 @@
             <strong class="mr-2">
               {{ minicardnumber }}
             </strong>
-            <span class=""">
+            <span class="">
               {{ minicardtitle }}
             </span>
           </div>

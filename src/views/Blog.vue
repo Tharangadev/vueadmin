@@ -1,11 +1,9 @@
 <template>
   <div>
     <b-row>
-<b-col>
-  <h3 class="mainpageTitle mb-4">
-    Blog posts
-  </h3>
-</b-col>
+      <b-col>
+        <h3 class="mainpageTitle mb-4">Blog posts</h3>
+      </b-col>
     </b-row>
     <b-row>
       <b-col cols="3" class="d-flex">
@@ -39,7 +37,12 @@
     </b-row>
     <!-- verticle posts -->
     <b-row>
-      <b-col cols="3" class="d-flex" v-for="(post,index) in posts" :key="index">
+      <b-col
+        cols="3"
+        class="d-flex"
+        v-for="(post, index) in posts"
+        :key="index"
+      >
         <ImageCard :item="post"></ImageCard>
       </b-col>
     </b-row>
@@ -47,20 +50,24 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import ImageCard from "../components/other/Blog/ImageCard";
-import ImageCardH from "../components/other/Blog/ImageCardH";
+import {mapState, mapActions} from 'vuex';
+import ImageCard from '../components/other/Blog/ImageCard';
+import ImageCardH from '../components/other/Blog/ImageCardH';
+import {GRAB_ARTICLES} from '../store/action.type.js';
 export default {
-  name: "Blog",
+  name: 'Blog',
   components: {
+    ImageCardH,
     ImageCard,
-    ImageCardH
   },
   computed: {
     ...mapState({
-      posts: state => state.blog.articles
-    })
-  }
+      posts: state => state.blog.articles,
+    }),
+  },
+  async created() {
+    await this.$store.dispatch(GRAB_ARTICLES);
+  },
 };
 </script>
 
