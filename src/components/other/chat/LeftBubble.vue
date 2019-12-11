@@ -9,10 +9,7 @@
         />
       </div>
       <div class="p-3 m-2 rounded chat-bubble background-grey">
-        <p class="content">
-          apple is a good fruit ,orange is too ,banana is yello bit radio active
-          too ,
-        </p>
+        <p class="content">Consectetur consequuntur nisi soluta ut rem? Pariatur tenetur veniam eos cumque laborum dignissimos Dolores corporis libero consequuntur libero laboriosam voluptates? Alias facilis excepturi similique placeat quas Quam eveniet ipsa amet</p>
         <div class="chat-trangle"></div>
       </div>
     </div>
@@ -26,9 +23,9 @@
       .chat-trangle {
         width: 0;
         height: 0;
-        border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
-        border-left: 10px solid #eee;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #eee;
         position: absolute;
         left: -10px;
         top: 10px;

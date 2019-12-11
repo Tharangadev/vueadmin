@@ -1,19 +1,7 @@
-# control-panel-remaster
+# Vue js Admin panel
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vue js admin panel 
+![](/screenshots/Screenshots5.png)
+![](/screenshots/Screenshots3.png)
+![](/screenshots/Screenshots4.png)
+![](/screenshots/Screenshots2.png)

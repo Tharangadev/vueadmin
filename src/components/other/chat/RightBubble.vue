@@ -1,10 +1,7 @@
 <template>
   <div class="right-chat-block d-flex float-right align-items-center">
     <div class="p-3 m-2 rounded chat-bubble background-grey">
-      <p class="content">
-        apple is a good fruit ,orange is too ,banana is yello bit radio active
-        too ,
-      </p>
+      <p class="content">Ipsum dolor veritatis possimus voluptas cupiditate? Quibusdam modi ut esse sunt alias Libero maiores sequi repudiandae fugiat sed? Debitis quaerat assumenda nisi aliquid veritatis. Labore ullam aliquid eos cupiditate nostrum?</p>
       <div class="chat-trangle"></div>
     </div>
     <div class="avatar_block d-flex">

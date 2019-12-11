@@ -10,6 +10,8 @@
         </div>
         <div class="ml-2">
           <div>{{ item.author }}</div>
+          <!-- :TODO -->
+          <!-- replace article date  -->
           <small>{{ articleDate('22/10/2018 10:10:10') }} Days ago</small>
         </div>
         <div class="ml-auto like">

@@ -1,6 +1,6 @@
 <template>
   <div class="menubar">
-    <b-navbar toggleable="md" class="white-bg border-top border-bottom pl-2">
+    <b-navbar toggleable="md" class="white-bg border-top border-bottom pl-2"><b-container>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
@@ -47,10 +47,6 @@
               <router-link to="/chat">Chat</router-link>
             </b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="#">
-            <font-awesome icon="check"></font-awesome>
-            <span class="menuItem pl-2">Form</span>
-          </b-nav-item>
           <b-nav-item>
             <router-link to="/gallery">
               <font-awesome icon="camera"></font-awesome>
@@ -59,7 +55,7 @@
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
-    </b-navbar>
+   </b-container> </b-navbar>
   </div>
 </template>
 <script>

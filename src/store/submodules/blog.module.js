@@ -20,7 +20,7 @@ const actions = {
 const mutations = {
   [FETCH_ARTICLES](state, articles) {
     state.articles = articles;
-  },
+  }
 };
 const getters = {};
 
